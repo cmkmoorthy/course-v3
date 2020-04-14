@@ -119,7 +119,7 @@ If you choose the budget compute option, please replace the values of the parame
 export IMAGE_FAMILY="pytorch-latest-gpu" # or "pytorch-latest-cpu" for non-GPU instances
 export ZONE="us-west1-b"
 export INSTANCE_NAME="my-fastai-instance"
-export INSTANCE_TYPE="n2d-highmem-8" # budget: "n2d-highmem-4"
+export INSTANCE_TYPE="n1-highmem-8" # budget: "n2d-highmem-4"
 
 # budget: 'type=nvidia-tesla-T4,count=1'
 gcloud compute instances create $INSTANCE_NAME \
